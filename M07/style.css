@@ -1,0 +1,67 @@
+.body {
+    font-family : "Inter", sans-serif;
+    color : #ff0000;
+}
+
+.container {
+    padding : 60px 15%
+}
+.navbar {
+    background : #2c3e60;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color : #ffffff;
+    text-decoration : none;
+    margin-left: 16px;
+}
+
+.navbar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile-flex {
+    display : flex;
+    align-items : center;
+    gap : 40px;
+}
+
+.profile-img {
+    width : 100px;
+    height : 100px;
+    border-radius: 50%;
+    background-color : #ffffff
+}
+
+.profile-text h2{
+    font-size : 32px;
+    margin-bottom: 10px;
+}
+.logo {
+    font-size : 18px;
+    color : #ffffff;
+    padding : 20px 16px 12px 16px;
+    text-decoration : none;
+}
+nav a:hover{
+    color : #3498db;
+    text-decoration : underline;
+}
+
+.cards {
+    display : flex;
+    gap : 20px
+}
+
+.card {
+    background : white;
+    padding : 20px;
+    flex : 1;
+    border-radius : 10px;
+}

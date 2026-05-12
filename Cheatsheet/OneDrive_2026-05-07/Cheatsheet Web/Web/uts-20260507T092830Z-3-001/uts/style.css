@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(255, 255, 253, 0.735);
+    color: #070707;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    padding-top: 60px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #33415559;
+    border-radius: 12px;
+    padding: 20px;
+    transition: border 0.3s, transform 0.2s;
+}
+
+
+
+
+
+
+
+.navbar {
+    background: linear-gradient(to right, rgb(19, 19, 109), rgb(13, 94, 255));
+    border-bottom: 1px solid #334155;
+    padding: 16px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a,
+.logo p {
+    color: #f1f5f9;
+}
+
+.logo a {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 8px;
+}
+
+.nav-menu li a {
+    color: #ffffff;
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.nav-menu li a:hover {
+    color: #f1f5f9;
+    background-color: #007dfa63 ;
+}
+
+.nav-menu li a.active {
+    color: #f1f5f9;
+    font-weight: 800;
+    background-color:#007dfa63 ;
+}
+
+.hero {
+    padding: 200px 0;
+    
+    background: 
+        linear-gradient(rgba(0, 70, 150, 0.5), rgba(0, 70, 150, 0.5)),
+        url('bg.jpeg');
+
+    background-size: cover;
+    background-position: 50% 20%;
+    background-repeat: no-repeat;
+}
+
+.hero p {
+    margin-bottom: 15px;
+}
+
+.brand p,
+.brand h1 {
+    color: white;
+}
+
+.hero h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.hero h3 {
+    color:#007dfa;
+    margin-bottom: 16px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.btn-primary {
+    background-color: #ff9d00fe;
+    color: black;
+}
+
+.btn-primary:hover {
+    background: black;
+    color: #ff9d00fe;
+}
+
+.btn-outline {
+    border: 0.5px solid #ffffff5d;
+    backdrop-filter: blur(7px);
+    color: white;
+}
+
+.btn-outline:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+
+
+
+.section {
+    text-align: center;
+    padding: 48px 0;
+    border-top: 1px solid #334155;
+}
+
+.section h2{
+    font-size: x-large;
+}
+
+.section h3{
+    color:#007dfa;
+    margin-bottom: 12px;
+}
+
+.section img{
+    max-width: 630px;
+    border-radius: 12px;
+
+
+
+}
+
+/* / Cards Grid - CSS Grid /  */
+.cards-grid {
+    text-align: left;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+table {
+    width: 70%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+thead {
+    background-color: #cfd8e3;
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    border-top: 1px solid #334155;
+    margin-top: 32px;
+}
+
+.footer-inner {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 32px;
+    padding: 32px 0;
+}
+
+.footer-inner p {
+    color: #64748b;
+    font-size: 0.875rem;
+    margin-top: 8px;
+}
+
+.footer-inner h4 {
+    color: #007dfa;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.footer-inner a {
+    display: block;
+    color: #000000;
+    font-size: 0.85rem;
+    margin-bottom: 4px;
+}
+
+.footer-inner a:hover {
+    color: #1b85ff;
+}
+
+.footer-bottom {
+    border-top: 1px solid #334155;
+    padding: 16px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+    color: #64748b;
+}
+
+.footer-nav ul {
+    list-style: none;
+}
+
+.footer-nav ul li {
+    margin-bottom: 4px;
+}
+
+.footer-nav ul li a {
+    color: #2964b6;
+    font-size: 0.85rem;
+}
+
+.footer-nav ul li a:hover {
+    color: #93c5fd;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.hamburger span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background-color: #f1f5f9;
+    border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+    .navbar-inner {
+        flex-wrap: wrap;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    nav {
+        width: 100%;
+        order: 3;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        padding: 8px 0;
+        border-top: 1px solid #334155;
+        margin-top: 12px;
+    }
+
+    .nav-menu li a {
+        display: block;
+        padding: 10px 0;
+        border-radius: 0;
+    }
+
+    .nav-toggle:checked~nav .nav-menu {
+        display: flex;
+    }
+
+    .nav-menu {
+        gap: 4px;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .steps-grid {
+        flex-direction: column;
+    }
+
+    .stats-grid {
+        flex-direction: column;
+    }
+
+    .footer-inner {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.25rem;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero {
+    animation: fadeIn 0.6s ease;
+}
